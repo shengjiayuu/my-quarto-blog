@@ -9,43 +9,96 @@
 <body>
   <div class="container">
     <header>
-      <h1>Welcome to Python Programming</h1>
-      <p>In this tutorial, we will cover the basics of Python programming. Whether you're new to programming or just looking to refresh your skills, this guide will help you get started with Python.</p>
+      <h1>Welcome to Python Data Science Tutorial</h1>
+      <p>In this tutorial, we will walk through the steps of using Python to train a machine learning model to predict outcomes based on data. Whether you're a beginner or looking to refresh your skills, this guide will help you get started with Python and machine learning.</p>
     </header>
 
     <section>
-      <h2>Why Learn Python?</h2>
-      <p>Python is an easy-to-learn, powerful programming language that you can use to build a wide range of applications. From web development to data science, Python is one of the most versatile languages out there.</p>
+      <h2>Experience and Motivation</h2>
+      <p>Jessica is comfortable using a computer for everyday activities like socializing, studying, and taking photos. However, she has no technical experience with programming languages like Python and hasn’t explored coding before.</p>
+      <p>Jessica wants to learn Python to enhance her skills and maybe create her own projects, such as small apps or automation scripts. She’s curious about how programming can make everyday tasks easier and more fun. Her goal is to start with basic Python concepts and gradually understand how to write simple programs to impress her friends and solve practical problems in her daily life.</p>
     </section>
 
     <section>
-      <h2>Setting Up Python</h2>
-      <p>To begin programming with Python, you need to install Python and set up a development environment.</p>
-      <h3>Installation</h3>
-      <pre><code>sudo apt install python3</code></pre>
-      <p>Alternatively, you can download the installer from the official Python website: <a href="https://www.python.org/downloads/">https://www.python.org/downloads/</a></p>
+      <h2>What You Will Learn</h2>
+      <p>In this tutorial, you will learn how to:</p>
+      <ul>
+        <li>Install necessary libraries for machine learning and data science in Python.</li>
+        <li>Prepare and clean data for training a machine learning model.</li>
+        <li>Train a Random Forest classifier using `scikit-learn`.</li>
+        <li>Evaluate the model’s performance.</li>
+        <li>Visualize the feature importance of the model.</li>
+      </ul>
     </section>
 
     <section>
-      <h2>Your First Python Program</h2>
-      <p>Let's start by writing a simple program. Create a new file called <code>hello.py</code> and add the following code:</p>
-      <pre><code>print("Hello, World!")</code></pre>
-      <p>When you run this program, it will print <strong>Hello, World!</strong> to the console. It's the most basic program in Python!</p>
+      <h2>Step 1: Install Necessary Libraries</h2>
+      <p>Before we begin, let's make sure you have the required libraries installed. You will need `scikit-learn`, `matplotlib`, and `pandas`. You can install them by running the following command in your terminal:</p>
+      <pre><code>pip install scikit-learn matplotlib pandas</code></pre>
     </section>
 
     <section>
-      <h2>Variables and Data Types</h2>
-      <p>In Python, you can store values in variables. Here are some basic data types:</p>
+      <h2>Step 2: Import Libraries</h2>
+      <p>Once you have the libraries installed, import them in your Python script as follows:</p>
       <pre><code>
-age = 25 # Integer
-height = 1.75 # Float
-name = "Jessica" # String
-is_learning = True # Boolean
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import accuracy_score
+import matplotlib.pyplot as plt
+      </code></pre>
+    </section>
 
-print("Name:", name)
-print("Age:", age)
-print("Height:", height)
-print("Learning Python:", is_learning)
+    <section>
+      <h2>Step 3: Prepare the Data</h2>
+      <p>Now, let’s load a dataset and prepare it for model training. We’ll use the `pandas` library to read a CSV file and then split it into features (X) and the target (y).</p>
+      <pre><code>
+# Load data
+data = pd.read_csv('your_data.csv')
+
+# Split data into features and target
+X = data.drop('target', axis=1)
+y = data['target']
+
+# Split the data into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+      </code></pre>
+    </section>
+
+    <section>
+      <h2>Step 4: Train the Machine Learning Model</h2>
+      <p>Next, we’ll train a Random Forest classifier using the training data.</p>
+      <pre><code>
+# Initialize the Random Forest model
+model = RandomForestClassifier()
+
+# Train the model
+model.fit(X_train, y_train)
+      </code></pre>
+    </section>
+
+    <section>
+      <h2>Step 5: Evaluate the Model</h2>
+      <p>Once the model is trained, you can evaluate its performance using accuracy. Let’s make predictions on the test set and calculate the accuracy score:</p>
+      <pre><code>
+# Make predictions
+y_pred = model.predict(X_test)
+
+# Calculate accuracy
+accuracy = accuracy_score(y_test, y_pred)
+print(f'Accuracy: {accuracy}')
+      </code></pre>
+    </section>
+
+    <section>
+      <h2>Step 6: Visualize Feature Importance</h2>
+      <p>Now, let’s visualize the importance of each feature in predicting the target variable using the trained Random Forest model:</p>
+      <pre><code>
+# Plot feature importance
+plt.figure(figsize=(10,6))
+plt.barh(X.columns, model.feature_importances_)
+plt.title('Feature Importance')
+plt.show()
       </code></pre>
     </section>
 
