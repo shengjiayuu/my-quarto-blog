@@ -6,46 +6,82 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <title>Python Tutorial for Beginners</title>
   <style>
-    code {white-space: pre-wrap;}
-    span.smallcaps {font-variant: small-caps;}
-    div.columns {display: flex; gap: min(4vw, 1.5em);}
-    div.column {flex: auto; overflow-x: auto;}
-    div.hanging-indent {margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list {list-style: none;}
-    ul.task-list li input[type="checkbox"] {width: 0.8em; margin: 0 0.8em 0.2em -1em;}
-    vertical-align: middle;
+    body {
+      background-color: #f4f4f9;
+      font-family: Arial, sans-serif;
+      color: #333;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1, h2, h3 {
+      color: #333;
+      margin-bottom: 0.5em;
+    }
+
+    p {
+      margin-bottom: 1.5em;
+    }
+
+    pre code {
+      background-color: #f5f5f5;
+      padding: 10px;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    header, section, footer {
+      margin-bottom: 2em;
+    }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Welcome to Python Programming</h1>
-    <p>In this tutorial, we will cover the basics of Python programming. Whether you're new to programming or just looking to refresh your skills, this guide will help you get started with Python.</p>
-  </header>
+  <div class="container">
+    <header>
+      <h1>Welcome to Python Programming</h1>
+      <p>In this tutorial, we will cover the basics of Python programming. Whether you're new to programming or just looking to refresh your skills, this guide will help you get started with Python.</p>
+    </header>
 
-  <section>
-    <h2>Why Learn Python?</h2>
-    <p>Python is an easy-to-learn, powerful programming language that you can use to build a wide range of applications. From web development to data science, Python is one of the most versatile languages out there.</p>
-  </section>
+    <section>
+      <h2>Why Learn Python?</h2>
+      <p>Python is an easy-to-learn, powerful programming language that you can use to build a wide range of applications. From web development to data science, Python is one of the most versatile languages out there.</p>
+    </section>
 
-  <section>
-    <h2>Setting Up Python</h2>
-    <p>To begin programming with Python, you need to install Python and set up a development environment.</p>
-    <h3>Installation</h3>
-    <pre><code>sudo apt install python3</code></pre>
-    <p>Alternatively, you can download the installer from the official Python website: <a href="https://www.python.org/downloads/">https://www.python.org/downloads/</a></p>
-  </section>
+    <section>
+      <h2>Setting Up Python</h2>
+      <p>To begin programming with Python, you need to install Python and set up a development environment.</p>
+      <h3>Installation</h3>
+      <pre><code>sudo apt install python3</code></pre>
+      <p>Alternatively, you can download the installer from the official Python website: <a href="https://www.python.org/downloads/">https://www.python.org/downloads/</a></p>
+    </section>
 
-  <section>
-    <h2>Your First Python Program</h2>
-    <p>Let's start by writing a simple program. Create a new file called <code>hello.py</code> and add the following code:</p>
-    <pre><code>print("Hello, World!")</code></pre>
-    <p>When you run this program, it will print <strong>Hello, World!</strong> to the console. It's the most basic program in Python!</p>
-  </section>
+    <section>
+      <h2>Your First Python Program</h2>
+      <p>Let's start by writing a simple program. Create a new file called <code>hello.py</code> and add the following code:</p>
+      <pre><code>print("Hello, World!")</code></pre>
+      <p>When you run this program, it will print <strong>Hello, World!</strong> to the console. It's the most basic program in Python!</p>
+    </section>
 
-  <section>
-    <h2>Variables and Data Types</h2>
-    <p>In Python, you can store values in variables. Here are some basic data types:</p>
-    <pre><code>
+    <section>
+      <h2>Variables and Data Types</h2>
+      <p>In Python, you can store values in variables. Here are some basic data types:</p>
+      <pre><code>
 age = 25 # Integer
 height = 1.75 # Float
 name = "Jessica" # String
@@ -55,33 +91,33 @@ print("Name:", name)
 print("Age:", age)
 print("Height:", height)
 print("Learning Python:", is_learning)
-    </code></pre>
-  </section>
+      </code></pre>
+    </section>
 
-  <section>
-    <h2>Control Flow: If Statements and Loops</h2>
-    <p>Python allows you to control the flow of your programs using conditionals and loops. Here's an example:</p>
-    <h3>If Statements</h3>
-    <pre><code>
+    <section>
+      <h2>Control Flow: If Statements and Loops</h2>
+      <p>Python allows you to control the flow of your programs using conditionals and loops. Here's an example:</p>
+      <h3>If Statements</h3>
+      <pre><code>
 number = int(input("Enter a number: "))
 
 if number % 2 == 0:
     print("The number is even.")
 else:
     print("The number is odd.")
-    </code></pre>
-    <h3>Loops</h3>
-    <pre><code>
+      </code></pre>
+      <h3>Loops</h3>
+      <pre><code>
 for i in range(5):
     print(i)
-    </code></pre>
-    <p>This loop will print numbers from 0 to 4.</p>
-  </section>
+      </code></pre>
+      <p>This loop will print numbers from 0 to 4.</p>
+    </section>
 
-  <section>
-    <h2>Practical Example: Currency Converter</h2>
-    <p>Now let's create a simple currency converter. Here's how you can write the code to convert USD to EUR:</p>
-    <pre><code>
+    <section>
+      <h2>Practical Example: Currency Converter</h2>
+      <p>Now let's create a simple currency converter. Here's how you can write the code to convert USD to EUR:</p>
+      <pre><code>
 def usd_to_eur(usd):
     exchange_rate = 0.85
     return usd * exchange_rate
@@ -89,11 +125,13 @@ def usd_to_eur(usd):
 usd_amount = float(input("Enter amount in USD: "))
 eur_amount = usd_to_eur(usd_amount)
 print(f"{usd_amount} USD is equal to {eur_amount} EUR.")
-    </code></pre>
-  </section>
+      </code></pre>
+    </section>
 
-  <footer>
-    <p>Keep experimenting and building more Python projects!</p>
-  </footer>
+    <footer>
+      <p>Keep experimenting and building more Python projects!</p>
+    </footer>
+  </div>
 </body>
 </html>
+
