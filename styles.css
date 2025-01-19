@@ -1,11 +1,11 @@
-
+/* Resetting some default styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-
+/* Body styling */
 body {
   font-family: 'Arial', sans-serif;
   background-color: #f8f9fa;
@@ -15,12 +15,14 @@ body {
   padding: 0;
 }
 
+/* Container for page content */
 .container {
   max-width: 1000px;
   margin: 0 auto;
   padding: 20px;
 }
 
+/* Header styling */
 header {
   text-align: center;
   padding: 20px;
@@ -39,6 +41,7 @@ header p {
   font-size: 1.2rem;
 }
 
+/* Section styling */
 section {
   background-color: #fff;
   padding: 20px;
