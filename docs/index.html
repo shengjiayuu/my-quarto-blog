@@ -1,56 +1,10 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="generator" content="quarto-1.6.39">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <title>Python Tutorial for Beginners</title>
   <link rel="stylesheet" href="styles.css">
-  <style>
-    body {
-      background-color: #f4f4f9;
-      font-family: Arial, sans-serif;
-      color: #333;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-
-    h1, h2, h3 {
-      color: #333;
-      margin-bottom: 0.5em;
-    }
-
-    p {
-      margin-bottom: 1.5em;
-    }
-
-    pre code {
-      background-color: #f5f5f5;
-      padding: 10px;
-      border-radius: 5px;
-      overflow-x: auto;
-    }
-
-    a {
-      color: #007bff;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    header, section, footer {
-      margin-bottom: 2em;
-    }
-  </style>
 </head>
 <body>
   <div class="container">
@@ -92,40 +46,6 @@ print("Name:", name)
 print("Age:", age)
 print("Height:", height)
 print("Learning Python:", is_learning)
-      </code></pre>
-    </section>
-
-    <section>
-      <h2>Control Flow: If Statements and Loops</h2>
-      <p>Python allows you to control the flow of your programs using conditionals and loops. Here's an example:</p>
-      <h3>If Statements</h3>
-      <pre><code>
-number = int(input("Enter a number: "))
-
-if number % 2 == 0:
-    print("The number is even.")
-else:
-    print("The number is odd.")
-      </code></pre>
-      <h3>Loops</h3>
-      <pre><code>
-for i in range(5):
-    print(i)
-      </code></pre>
-      <p>This loop will print numbers from 0 to 4.</p>
-    </section>
-
-    <section>
-      <h2>Practical Example: Currency Converter</h2>
-      <p>Now let's create a simple currency converter. Here's how you can write the code to convert USD to EUR:</p>
-      <pre><code>
-def usd_to_eur(usd):
-    exchange_rate = 0.85
-    return usd * exchange_rate
-
-usd_amount = float(input("Enter amount in USD: "))
-eur_amount = usd_to_eur(usd_amount)
-print(f"{usd_amount} USD is equal to {eur_amount} EUR.")
       </code></pre>
     </section>
 
