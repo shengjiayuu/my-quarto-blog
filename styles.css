@@ -54,23 +54,32 @@ section h2 {
 }
 
 pre {
-  background-color: #f1f1f1;
-  padding: 15px;
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  padding: 20px;
   border-radius: 5px;
   overflow-x: auto;
+  font-size: 1rem;
+  line-height: 1.6;
   margin-bottom: 20px;
-}
-
-code {
-  font-family: 'Courier New', Courier, monospace;
-  background-color: #f1f1f1;
-  padding: 0.3em 0.5em;
-  border-radius: 3px;
+  border: 1px solid #333;
+  user-select: text;
 }
 
 pre code {
-  white-space: pre-wrap;
+  font-family: "Courier New", Courier, monospace;
+  color: #d4d4d4;
+  background-color: transparent;
   word-wrap: break-word;
+}
+
+code {
+  font-size: 1rem;
+  font-family: "Courier New", Courier, monospace;
+  background-color: #f5f5f5;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  color: #d63384;
 }
 
 ul {
