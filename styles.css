@@ -60,24 +60,24 @@ section h2 {
 
 /* Code block styling */
 pre {
-  background-color: #282828; /* Dark background similar to examples */
-  color: #f8f8f2; /* Lighter text color */
+  background-color: #f5f5f5; /* Match example format */
+  color: #282828; /* Dark text for contrast */
   padding: 20px;
   border-radius: 5px;
   overflow-x: auto;
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 20px;
-  border: 1px solid #333; /* Subtle border around the code block */
-  user-select: text; /* Make code block selectable */
+  border: 1px solid #ccc; /* Subtle border */
+  user-select: text;
 }
 
 /* Code block content */
 pre code {
   font-family: "Courier New", Courier, monospace;
-  color: #f8f8f2; /* Lighter color for the text */
-  background-color: transparent; /* Transparent background to keep the pre background */
-  word-wrap: break-word; /* Allow long lines to break and wrap */
+  color: #d63384; /* Custom color for code text */
+  background-color: transparent;
+  word-wrap: break-word;
 }
 
 /* Inline code styling */
@@ -87,7 +87,7 @@ code {
   background-color: #f5f5f5;
   padding: 0.2em 0.4em;
   border-radius: 3px;
-  color: #d63384; /* Custom color for inline code */
+  color: #d63384;
 }
 
 /* List styling */
@@ -123,17 +123,33 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Back to top button */
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+}
+
+#back-to-top:hover {
+  background-color: #0056b3;
+}
+
 /* Mobile responsiveness */
 @media (max-width: 768px) {
   header h1 {
     font-size: 2rem;
   }
-
   section {
     padding: 15px;
   }
-
   pre {
     padding: 10px;
   }
 }
+
