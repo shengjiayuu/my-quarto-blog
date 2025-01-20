@@ -1,97 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>🚀 Mastering Machine Learning with Python</title>
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        line-height: 1.8;
-        max-width: 800px;
-        margin: auto;
-        padding: 20px;
-      }
-      .hero-header {
-        background-color: #f8f9fa;
-        padding: 30px;
-        text-align: center;
-        margin-bottom: 20px;
-      }
-      .metadata {
-        text-align: center;
-        color: gray;
-        font-size: 14px;
-        margin-top: 10px;
-      }
-      .tag {
-        display: inline-block;
-        background-color: #e0e0e0;
-        color: #333;
-        padding: 5px 10px;
-        border-radius: 5px;
-        font-size: 12px;
-        font-weight: bold;
-        margin-top: 10px;
-      }
-      h1 {
-        font-size: 2em;
-        font-weight: bold;
-        margin-bottom: 10px;
-      }
-      h2 {
-        font-size: 1.5em;
-        font-weight: bold;
-        border-bottom: 2px solid #ddd;
-        padding-bottom: 5px;
-        margin-top: 30px;
-      }
-      hr {
-        border-top: 1px solid #ccc;
-        margin-top: 30px;
-      }
-      p {
-        font-size: 1.1em;
-      }
-      pre {
-        background-color: #f5f5f5;
-        padding: 10px;
-        border-radius: 5px;
-        overflow-x: auto;
-        white-space: pre-wrap;
-        word-wrap: break-word;
-      }
-      pre code {
-        font-family: "Courier New", Courier, monospace;
-        color: #d63384;
-      }
-      img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-        margin: 20px auto;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      }
-    </style>
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🚀 Mastering Machine Learning with Python</title>
   
-  <body>
-    <header class="hero-header">
-      <h1>🚀 Mastering Machine Learning with Python</h1>
-      <div class="metadata">
-        <span class="tag">TUTORIAL</span>
-        <p>Machine learning allows computers to learn patterns from data and make decisions without being explicitly programmed. Whether it’s recommending movies, filtering spam emails, or detecting fraud, machine learning is everywhere! 🎯</p>
-        <p>This tutorial is designed for beginners and non-technical readers who want to understand the basics of machine learning and how to build a simple model using Python. Let’s dive in! 🏊‍♂️</p>
-        <img src="machine_learning_overview.png" alt="Machine Learning Overview">
-        <p>Published: January 15, 2025</p>
-      </div>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 
-    <hr>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.8;
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+    .hero-header {
+      background-color: #eceff1; 
+      padding: 30px;
+      text-align: center;
+      margin-bottom: 20px;
+      border-bottom: 3px solid #ddd; 
+    }
+    .metadata {
+      text-align: center;
+      color: gray;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+    .tag {
+      display: inline-block;
+      background-color: #e0e0e0;
+      color: #333;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 12px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    h1 {
+      font-size: 2em;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-size: 1.5em;
+      font-weight: bold;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+      margin-top: 30px;
+    }
+    hr {
+      border-top: 1px solid #ccc;
+      margin-top: 30px;
+    }
+    p {
+      font-size: 1.1em;
+    }
+    pre {
+      background-color: #f5f5f5;
+      padding: 10px;
+      border-radius: 5px;
+      overflow-x: auto;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+    pre code {
+      font-family: "Courier New", Courier, monospace;
+      color: #d63384;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 20px auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+
+<body>
+  <header class="hero-header">
+    <h1>🚀 Mastering Machine Learning with Python</h1>
+
+    <div class="metadata">
+      <span class="tag">TUTORIAL</span>
+      <p>Published: January 15, 2025</p>
+    </div>
+
+    <div class="intro">
+      <p>Machine learning allows computers to learn patterns from data and make decisions without being explicitly programmed. Whether it’s recommending movies, filtering spam emails, or detecting fraud, machine learning is everywhere! 🎯</p>
+      <p>This tutorial is designed for beginners and non-technical readers who want to understand the basics of machine learning and how to build a simple model using Python. Let’s dive in! 🏊‍♂️</p>
+      <img src="machine_learning_overview.png" alt="Machine Learning Overview">
+    </div>
+  </header>
 
 <section>
       <h2>Step 1: Install Necessary Libraries 🛠️</h2>
@@ -207,36 +211,61 @@ print(f'Model Accuracy: {accuracy:.2f}')
 
     <hr>
 
-  <section>
-      <h2>Step 6: Hyperparameter Tuning 🎹</h2>
-      <p>Hyperparameter tuning helps us optimize our model's performance by finding the best combination of settings. Instead of manually adjusting parameters, we use <strong>GridSearchCV</strong> to systematically search for the optimal values.</p>
-      
-      <h3>🌟 Why is Hyperparameter Tuning Important?</h3>
-      <ul>
-        <li>Machine learning models have adjustable parameters that influence their predictions.</li>
-        <li>Optimal hyperparameters improve accuracy and prevent overfitting.</li>
-        <li>GridSearchCV automates testing multiple parameter combinations.</li>
-      </ul>
-      
-      <pre><code>
+<section>
+  <h2>Step 6: Hyperparameter Tuning 🎹</h2>
+  <p>Hyperparameter tuning helps us optimize our model's performance by finding the best combination of settings. Instead of manually adjusting parameters, we use <strong>GridSearchCV</strong> to systematically search for the optimal values.</p>
+  
+  <h3>🌟 Why is Hyperparameter Tuning Important?</h3>
+  <ul>
+    <li>Machine learning models have adjustable parameters that influence their predictions.</li>
+    <li>Optimal hyperparameters improve accuracy and prevent overfitting.</li>
+    <li><strong>GridSearchCV</strong> automates testing multiple parameter combinations.</li>
+  </ul>
+  
+  <pre><code>
 from sklearn.model_selection import GridSearchCV
 
 param_grid = {
-    'n_estimators': [50, 100, 200],
-    'max_depth': [None, 10, 20],
-    'min_samples_split': [2, 5, 10]
+    'n_estimators': [50, 100, 200],  # Number of trees in the forest
+    'max_depth': [None, 10, 20],  # Maximum depth of trees
+    'min_samples_split': [2, 5, 10]  # Minimum number of samples required to split a node
 }
 
 grid_search = GridSearchCV(RandomForestClassifier(), param_grid, cv=5, scoring='accuracy')
 grid_search.fit(X_train, y_train)
 
 print(f'Best Parameters: {grid_search.best_params_}')
-      </code></pre>
-      <p>Hyperparameter tuning can significantly enhance model performance by selecting the most effective parameter values, ensuring better predictions and generalization to new data.</p>
-    </section>
-    <hr>
-    <p>Reference: <a href="https://medium.com/@alinatabish/machine-learning-techniques-for-spam-detection-in-email-7db87eb11bc2" target="_blank">this article</a> on machine learning techniques.</p>
-  </body>
+  </code></pre>
+
+  <p>Hyperparameter tuning can significantly enhance model performance by selecting the most effective parameter values, ensuring better predictions and generalization to new data.</p>
+</section>
+
+<hr>
+
+<section>
+  <h2>🔎 Conclusion</h2>
+  <p>Congratulations! 🎉 You have successfully built, trained, and optimized a machine learning model. Throughout this tutorial, we covered:</p>
+  <ul>
+    <li>🔹 Installing essential Python libraries for machine learning.</li>
+    <li>🔹 Importing and preprocessing datasets effectively.</li>
+    <li>🔹 Training a <strong>Random Forest Classifier</strong> model.</li>
+    <li>🔹 Evaluating model accuracy and understanding different performance metrics.</li>
+    <li>🔹 Enhancing model performance using <strong>Hyperparameter Tuning</strong>.</li>
+  </ul>
+<hr>
+
+<section>
+  <h2>📚 References</h2>
+  <ol>
+    <li>
+      Tabish, A. (2022, August 24). <em>Machine learning techniques for spam detection in email</em>. 
+      <span>Medium.</span> 
+      <a href="https://medium.com/@alinatabish/machine-learning-techniques-for-spam-detection-in-email-7db87eb11bc2" target="_blank">Link</a>.
+    </li>
+  </ol>
+</section>
+
 </html>
+
 
 
