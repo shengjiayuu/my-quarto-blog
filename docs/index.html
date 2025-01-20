@@ -87,7 +87,14 @@
         <span class="tag">TUTORIAL</span>  
         <p>Published: January 15, 2025</p>
       </div>
-    </header>
+     <header>
+        <h1>Welcome to Python Data Science Tutorial</h1>
+        <p class="highlight">In this tutorial, we will walk through the steps of using Python to train a machine learning model to predict outcomes based on data.</p>
+        <h1>🚀 Mastering Machine Learning with Python</h1>
+        <p>Machine learning allows computers to learn patterns from data and make decisions without being explicitly programmed. Whether it’s recommending movies, filtering spam emails, or detecting fraud, machine learning is everywhere! 🎯</p>
+        <p>This tutorial is designed for beginners and non-technical readers who want to understand the basics of machine learning and how to build a simple model using Python. Let’s dive in! 🏊‍♂️</p>
+        <img src="images/machine_learning_overview.png" alt="Machine Learning Overview">
+      </header>
 
     <hr>
 
@@ -102,7 +109,7 @@
       <p>Each of these libraries plays a critical role in streamlining the machine learning workflow. Without them, manually implementing various processes like data wrangling, model training, and visualization would be highly inefficient.</p>
       <p>To install these libraries, simply run the following command in your terminal or command prompt:</p>
       <pre><code>pip install scikit-learn matplotlib pandas</code></pre>
-      <p>For a deeper dive into Python libraries used in machine learning, refer to the <a href="https://scikit-learn.org/stable/tutorial/basic/tutorial.html" target="_blank">Scikit-Learn Documentation</a>.</p>
+      <p>For a deeper dive into Python libraries used in machine learning, refer to the <a href=https://docs.python.org/3/library/index.html" target="_blank">Scikit-Learn Documentation</a>.</p>
     </section>
 
     <hr>
@@ -167,7 +174,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
       <p>Random Forest is widely used in industry for tasks like fraud detection, medical diagnosis, and spam filtering.</p>
       <pre><code>
 # Train the Random Forest model
-model = RandomForestClassifier(n_estimators=100, random_state=42)
+model = RandomForestClassifier(n_estimators=100, random_state=123)
 model.fit(X_train, y_train)
       </code></pre>
       <p>Here, we specify <code>n_estimators=100</code>, meaning our model will use 100 decision trees. Increasing the number of trees generally improves accuracy but can slow down training.</p>
