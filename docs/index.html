@@ -1,26 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" data-content_root="../../" >
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Section 101 Classifiers &#8212; DSCI 572&lt;br&gt;Supervised Learning II</title>
-  
-    <script data-cfasync="false">
-      document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-      document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
-    </script>
-  
-    <!-- Stylesheets -->
-    <link href="../../_static/styles/theme.css" rel="stylesheet" />
-    <link href="../../_static/styles/bootstrap.css" rel="stylesheet" />
-    <link href="../../_static/styles/pydata-sphinx-theme.css" rel="stylesheet" />
-    <link href="../../_static/styles/sphinx-book-theme.css" rel="stylesheet" />
-    <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css" rel="stylesheet" />
+    <title>Python Tutorial for Beginners</title>
+    <link rel="stylesheet" href="styles.css?v=2" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     
-    <!-- Custom CSS for code block background -->
     <style>
       pre {
-        background-color: #f5f5f5; /* Match example format */
+        background-color: #f5f5f5;
         padding: 10px;
         border-radius: 5px;
         overflow-x: auto;
@@ -30,6 +20,7 @@
         background-color: #f5f5f5;
         padding: 2px 5px;
         border-radius: 3px;
+        color: #d63384;
       }
       #back-to-top {
         position: fixed;
@@ -48,31 +39,74 @@
     </style>
   </head>
   
-  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+  <body>
     <button id="back-to-top">
       <i class="fa-solid fa-arrow-up"></i> Back to Top
     </button>
-  
-    <div class="bd-container">
-      <div class="bd-container__inner bd-page-width">
-        <main id="main-content" class="bd-main" role="main">
-          <div class="bd-content">
-            <div class="bd-article-container">
-              <article class="bd-article">
-                <section id="section-101-classifiers">
-                  <h1>Section 101 Classifiers</h1>
-                  <p>Both sections use the notes from <code>../notes/</code>. This folder includes section-specific materials, such as activities, slides, images, and other resources.</p>
-                </section>
-              </article>
-            </div>
-          </div>
-        </main>
-      </div>
+    <div class="container">
+      <header>
+        <h1>Welcome to Python Data Science Tutorial</h1>
+        <p>In this tutorial, we will walk through the steps of using Python...</p>
+      </header>
+      <section>
+        <h2>Step 1: Install Necessary Libraries</h2>
+        <pre><code>pip install scikit-learn matplotlib pandas</code></pre>
+      </section>
+      <section>
+        <h2>Step 2: Import Libraries</h2>
+        <pre><code>
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import accuracy_score
+import matplotlib.pyplot as plt
+        </code></pre>
+      </section>
+      <section>
+        <h2>Step 3: Prepare the Data</h2>
+        <pre><code>
+# Load dataset
+data = pd.read_csv('your_data.csv')
+X = data.drop('target', axis=1)
+y = data['target']
+
+# Split the dataset
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+        </code></pre>
+      </section>
+      <section>
+        <h2>Step 4: Train the Model</h2>
+        <pre><code>
+# Initialize and train the Random Forest model
+model = RandomForestClassifier()
+model.fit(X_train, y_train)
+        </code></pre>
+      </section>
+      <section>
+        <h2>Step 5: Evaluate the Model</h2>
+        <pre><code>
+# Make predictions
+y_pred = model.predict(X_test)
+
+# Calculate accuracy
+accuracy = accuracy_score(y_test, y_pred)
+print(f'Accuracy: {accuracy}')
+        </code></pre>
+      </section>
+      <section>
+        <h2>Step 6: Visualize Feature Importance</h2>
+        <pre><code>
+# Plot feature importance
+importances = model.feature_importances_
+plt.figure(figsize=(10,6))
+plt.barh(X.columns, importances)
+plt.title('Feature Importance')
+plt.show()
+        </code></pre>
+      </section>
     </div>
-  
-    <!-- Scripts -->
-    <script src="../../_static/scripts/bootstrap.js"></script>
-    <script src="../../_static/scripts/pydata-sphinx-theme.js"></script>
+    
+    <script src="scripts.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const backToTop = document.getElementById("back-to-top");
